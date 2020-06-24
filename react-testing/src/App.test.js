@@ -34,16 +34,22 @@ test('renders the the email address in contact', () => {
   // and return the child
   const { getByLabelText } = getQueriesForElement(div)
   const emailLabel = getByLabelText(/email/i)
-  // console.log(emailInfo.innerHTML)
+  console.log(emailLabel.innerHTML)
   expect(emailLabel).toHaveAttribute('id', 'contact-email-address')
 
   // the two way have to same goal, to test the text content
   // expect(div.querySelector('label')).toHaveTextContent('Email') 
   // expect(div.querySelector('h3').textContent).toBe('aichi.p.chang [at] gmail.com') 
 
+  // we can also write it this way
   const {getByText, debug} = render(<Contact />)
   const emailAddress = getByText(/aichi\.p\.chang \[at] gmail\.com/i)
   expect(emailAddress).toBeInTheDocument()
 
-  debug()
+  // debug() will renders the DOM node we pass to it in the console
+  // debug(emailAddress)
 });
+
+
+// queryByRole, queryByxxx is to let us to test if anything is not rendered as expected
+// expect(queryByRole('alert')).toBeNull
