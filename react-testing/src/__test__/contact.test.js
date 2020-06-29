@@ -7,7 +7,7 @@ import { getQueriesForElement } from '@testing-library/dom'
 // import '@testing-library/jest-dom/extend-expect' (3) *this is the best way of doing it*
 //  but this import actually is already been configured into our project in setupTest.js
 
-import Contact from './components/Contact';
+import Contact from '../components/Contact';
 
 // expect.extend({toHaveTextContent}) (1)
 // expect.extend(jestDOM) (2)
