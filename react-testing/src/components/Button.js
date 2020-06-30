@@ -8,9 +8,9 @@ export default function Order({expand, update}) {
 
  function handleClick() {
   setCount(count+1)
-  if (count >= 5) {
-    setCount(0)
-  }
+  // if (count >= 5) {
+  //   setCount(0)
+  // }
   const newData = { ...expand, [order[count]]: true }
   update(newData) 
 }
@@ -18,7 +18,8 @@ export default function Order({expand, update}) {
 
   return (
     <div>
-      <button id='add-text' onClick={() => handleClick()}>What's More?</button>
+      {count <= 5 && <button id='add-text' className='button hover-silver' onClick={() => handleClick()}>What's more?</button>}
+      {count > 5 && <h3>Enchanté <span role='img' aria-label='wave'>👋</span></h3>}
     </div>
   )
 }

@@ -10,7 +10,7 @@ body {
 
 .smallCircle {
   position: absolute;
-  background-color: plum;
+  background-color: #FFB700;
   height: 10px;
   width: 10px;
   border-radius: 50%;
@@ -51,5 +51,39 @@ body {
   }
   to {
     transform: rotate(360deg) translateX(3px) rotate(-360deg);
+  }
+}
+
+
+.button {
+  background-color: #ffffff;
+  color: #000000;
+  border: 1px solid black;
+  padding: 6px 15px;
+  margin-top: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  outline: none;
+  border-radius: 3px;
+  transition: all .4s ease-in-out;
+}
+
+.button:hover {
+  transform: scale(1.1);
+}
+
+.background {
+  background-color: #d4f7d4;
+  height: 700px;
+  padding: 20px;
+}
+
+
+@media(min-width: 600px) {
+  .background {
+    background-color: #d4f7d4;
+    height: 500px;
   }
 }
