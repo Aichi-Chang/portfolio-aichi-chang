@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import Order from './Order'
 
 export default function Fact() {
 
@@ -10,15 +11,17 @@ export default function Fact() {
     'I also speak French and Paris was my second home.',
     `You can contact me via Github, LinkedIn or Tumblr. À bientôt <span role='img' aria-label='wave'>👋</span>`
   ])
-  const [count, setCount] = useState(0)
 
-  function handleClick() {
-    if (count >= 5) {
-      setCount(0)
-    } else {
-      setCount(count+1)
-    }  
-  }
+  const [expand, setExpand] = useState({
+    one: false,
+    two: false,
+    three: false,
+    four: false,
+    five: false
+  })
+
+  
+
 
   return (
     <div>
@@ -26,8 +29,12 @@ export default function Fact() {
    <p>
      Hello, I'm Aichi. Junior software engineer - enjoy reading manga, good food, and films <span role='img' aria-label='sunglasses'>😎</span>
    </p>
-   <p>{factArr[count]}</p>
-   <button id='add-text' onClick={() => handleClick()}>What's More?</button>
+   {expand.one === 'true' && <p id='one'>Being a software engineer has perfectly combined my creativity, problem-solving skills, and my knowledge in technology.</p>}
+   {expand.two && <p id='two'>I write code with JavaScrip and Python. I'm also good at React, Node.js, Express, Django, MongoDB, PostgresQL, Webpack, Babel and more...</p>}
+   <Order 
+    expand={expand}
+    update={setExpand}
+   />
    </div>
   )
 }
