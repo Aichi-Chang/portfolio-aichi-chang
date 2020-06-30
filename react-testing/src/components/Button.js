@@ -1,19 +1,18 @@
 import React, {useState} from 'react'
 
-export default function Order(props) {
+export default function Order({expand, update}) {
 
  const [count, setCount] = useState(0)
- const order = ['one', 'two', 'three', 'four', 'five']
+ const order = ['one', 'two', 'three', 'four', 'five', 'six']
 
 
  function handleClick() {
-  // setExpand({...expand, order: true})
   setCount(count+1)
-  if (count >= 4) {
+  if (count >= 5) {
     setCount(0)
   }
-  const newData = { ...props.expand }
-  console.log(newData)
+  const newData = { ...expand, [order[count]]: true }
+  update(newData) 
 }
 
 
