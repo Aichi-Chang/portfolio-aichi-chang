@@ -18,7 +18,7 @@ export default function Order({expand, update}) {
 
   return (
     <div>
-      {count <= 5 && <button id='add-text' className='button hover-silver' onClick={() => handleClick()}>What's more?</button>}
+      {count <= 5 && <button id='add-text' className='button' onClick={() => handleClick()}>What's more?</button>}
       {count > 5 && <h3>Enchanté <span role='img' aria-label='wave'>👋</span></h3>}
     </div>
   )
