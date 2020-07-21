@@ -18,8 +18,9 @@ export default function Home() {
 
   function handleView() {
       setViewProjects(!viewProjects)
-      setShowLess(false)
-      if(showLess === false) {
+      if (showLess === true) {
+        setShowLess(false)
+      } else {
         setTimeout(() => {
           setShowLess(true)
         }, 650)
