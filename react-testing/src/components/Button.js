@@ -1,9 +1,13 @@
-import React, {useState} from 'react'
+import React, {useState, useContext} from 'react'
+import { UpdateExpandContext } from './Home'
+
+
 
 export default function Order({expand, update}) {
 
  const [count, setCount] = useState(0)
  const order = ['one', 'two', 'three', 'four', 'five', 'six']
+ const value = useContext(UpdateExpandContext)
 
 
  function handleClick() {
@@ -19,7 +23,7 @@ export default function Order({expand, update}) {
       {count > 5 && 
         <>
         <h3>Enchanté <span role='img' aria-label='wave'>👋</span></h3>
-        <button className='button' >View Projects</button>
+        {!value.viewProjects && <button className='button' onClick={() => value.handleView()}>View Projects</button>}
         </>}
     </div>
   )

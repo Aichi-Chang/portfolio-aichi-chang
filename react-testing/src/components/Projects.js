@@ -7,16 +7,14 @@ import workbench from '../assets/workbench.png'
 import bookDoctor from '../assets/bookDoctor.png'
 
 
-
 export default function Projects() {
 
 
   return (
     <>
 
-    <div></div>
-
     <div className='flex flex-wrap wrap justify-center bg-light-gray'>
+
       <div className='project ma4'>
         <img src={bookDoctor} alt='space invader' />
         <h3>Book-Doctor</h3>
@@ -25,6 +23,7 @@ export default function Projects() {
         <a className='button mr3' href='https://book-doctor.herokuapp.com/'>View Site</a>
         <a className='button mr3' href='https://github.com/Aichi-Chang/bookdoctor'>Github</a>
       </div>
+
       <div className='project ma4'>
         <img src={workbench} alt='space invader' />
         <h3>Space Invaders</h3>
@@ -32,6 +31,7 @@ export default function Projects() {
         <a className='button mr3' href='https://aichi-chang.github.io/SEI-Project-1/'>View Site</a>
         <a className='button mr3' href='https://github.com/Aichi-Chang/SEI-Project-1'>Github</a>
       </div>
+
       <div className='project ma4'>
         <img src={theVault} alt='space invader' />
         <h3>Space Invaders</h3>
@@ -39,6 +39,7 @@ export default function Projects() {
         <a className='button mr3' href='https://aichi-chang.github.io/SEI-Project-1/'>View Site</a>
         <a className='button mr3' href='https://github.com/Aichi-Chang/SEI-Project-1'>Github</a>
       </div>
+
       <div className='project ma4'>
         <img src={aPlusL} alt='space invader' />
         <h3>Space Invaders</h3>
@@ -46,6 +47,7 @@ export default function Projects() {
         <a className='button mr3' href='https://aichi-chang.github.io/SEI-Project-1/'>View Site</a>
         <a className='button mr3' href='https://github.com/Aichi-Chang/SEI-Project-1'>Github</a>
       </div>
+
       <div className='project ma4'>
         <img src={spaceInvaders} alt='space invader' />
         <h3>Space Invaders</h3>
@@ -53,6 +55,7 @@ export default function Projects() {
         <a className='button mr3' href='https://aichi-chang.github.io/SEI-Project-1/'>View Site</a>
         <a className='button mr3' href='https://github.com/Aichi-Chang/SEI-Project-1'>Github</a>
       </div>
+
     </div>
 
 

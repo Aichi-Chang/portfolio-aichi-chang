@@ -7,43 +7,52 @@ import Projects from './Projects'
 
 
 
-export const UpdateExpandContext = React.createContext({
-  viewProjects: false,
-  handleView: () => {}
-})
+export const UpdateExpandContext = React.createContext()
 
 export default function Home() {
 
   let projectRef = useRef(null)
+  let factRef = useRef(null)
   const [viewProjects, setViewProjects] = useState(false)
+  const [showLess, setShowLess] = useState(true)
 
   function handleView() {
-    setViewProjects(!viewProjects)
+      setViewProjects(!viewProjects)
+      setShowLess(false)
+      if(showLess === false) {
+        setTimeout(() => {
+          setShowLess(true)
+        }, 650)
+      }
   }
 
-  // function getProjects() {
-  //   if (viewProjects) {
-  //     return <div className='mt4' ref={projectRef}>
-  //     <Projects />
-  //   </div>}
-  //   }
-
+  const value = {
+    showLess,
+    setShowLess,
+    viewProjects,
+    setViewProjects,
+    handleView
+  }
 
     useEffect(() => {
-      if(projectRef.current) {
-      projectRef.current.scrollIntoView({
-        behavior: 'smooth'
-      })
-    }
+      if(viewProjects) {
+        projectRef.current.scrollIntoView({
+          behavior: 'smooth'
+        }) 
+      } else {
+        factRef.current.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        })
+      }
     })
   
 
 
   return (
     <div className='ma4'>
-
+    <div ref={factRef}></div>
       <div className='flex-l justify-between-l'>
-        
         <div>
           <div className='flex flex-row items-center'>
             <div className='flex items-center justify-center mr2 relative'>
@@ -63,14 +72,18 @@ export default function Home() {
         <Navs />
       </div>
       
-      <div className='mb4'>
-        <Facts />
-      </div>
-
-        <div className='mt4' ref={projectRef}>
-        <Projects />
-      </div>
+      <UpdateExpandContext.Provider value={value}>
+        <div className='mb4'>
+          <Facts />
+        </div>
+      </UpdateExpandContext.Provider>
       
+
+        {!showLess && <div className='mt4' ref={projectRef}>
+          <Projects />
+        </div>}
+
+      {viewProjects && <button className='button' onClick={() => handleView()}>Show Less</button>}
       
     </div>
   )
