@@ -9,7 +9,13 @@ import bookDoctor from '../assets/bookDoctor.png'
 
 
 export default function Projects() {
+
+
   return (
+    <>
+
+    <div></div>
+
     <div className='flex flex-wrap wrap justify-center bg-light-gray'>
       <div className='project ma4'>
         <img src={bookDoctor} alt='space invader' />
@@ -48,5 +54,8 @@ export default function Projects() {
         <a className='button mr3' href='https://github.com/Aichi-Chang/SEI-Project-1'>Github</a>
       </div>
     </div>
+
+
+    </>
   )
 }

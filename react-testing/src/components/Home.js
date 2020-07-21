@@ -1,11 +1,44 @@
-import React from 'react'
+import React, { useState, useRef, useEffect, useContext } from 'react'
 import { Link } from 'react-router-dom'
 
 import Facts from './Facts'
 import Navs from './Navs'
+import Projects from './Projects'
 
+
+
+export const UpdateExpandContext = React.createContext({
+  viewProjects: false,
+  handleView: () => {}
+})
 
 export default function Home() {
+
+  let projectRef = useRef(null)
+  const [viewProjects, setViewProjects] = useState(false)
+
+  function handleView() {
+    setViewProjects(!viewProjects)
+  }
+
+  // function getProjects() {
+  //   if (viewProjects) {
+  //     return <div className='mt4' ref={projectRef}>
+  //     <Projects />
+  //   </div>}
+  //   }
+
+
+    useEffect(() => {
+      if(projectRef.current) {
+      projectRef.current.scrollIntoView({
+        behavior: 'smooth'
+      })
+    }
+    })
+  
+
+
   return (
     <div className='ma4'>
 
@@ -26,13 +59,18 @@ export default function Home() {
           
           <p className='ma0'>Junior Software Engineer Based in London</p>
         </div>
-        
 
         <Navs />
       </div>
       
+      <div className='mb4'>
+        <Facts />
+      </div>
+
+        <div className='mt4' ref={projectRef}>
+        <Projects />
+      </div>
       
-      <Facts />
       
     </div>
   )

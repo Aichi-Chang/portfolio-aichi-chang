@@ -1,4 +1,6 @@
-
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   margin: 0;
@@ -78,7 +80,7 @@ body {
 
 .background {
   background-color: #d4f7d4;
-  height: 700px;
+  height: 500px;
   padding: 20px;
 }
 

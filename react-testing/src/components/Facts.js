@@ -15,7 +15,7 @@ export default function Fact() {
 
 
   return (
-    <div className='mt6 background'>
+    <div className='mt4 background'>
     <h3 className='underline'>About Me ლ(´ ∀ ` *)ლ</h3>
    <p className='avenir'>
      Hello, I'm Aichi. Junior software engineer - enjoy reading manga, french dessert, and indie films <span role='img' aria-label='sunglasses'>😎</span>
