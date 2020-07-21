@@ -13,7 +13,7 @@ import Contact from './components/Contact'
 
 function App() {
   return (
-    <div>
+    <div className='vw-100'>
       
       <BrowserRouter>
         <Switch>

@@ -7,7 +7,7 @@ import Navs from './Navs'
 
 export default function Home() {
   return (
-    <div>
+    <div className='ma4'>
 
       <div className='flex-l justify-between-l'>
         

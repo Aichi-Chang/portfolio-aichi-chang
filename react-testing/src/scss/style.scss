@@ -1,3 +1,5 @@
+
+
 body {
   margin: 0;
   padding: 0;
@@ -44,6 +46,7 @@ body {
     transform: rotate(360deg) translateX(6px) rotate(-360deg);
   }
 }
+
 @keyframes logo-spin-otherway {
   from {
     transform: rotate(0deg) translateX(3px) rotate(0deg);
@@ -52,6 +55,8 @@ body {
     transform: rotate(360deg) translateX(3px) rotate(-360deg);
   }
 }
+
+
 .button {
   background-color: transparent;
   color: #000000;
@@ -64,7 +69,7 @@ body {
   font-size: 14px;
   outline: none;
   border-radius: 3px;
-  transition: all 0.4s ease-in-out;
+  transition: all .4s ease-in-out;
 }
 
 .button:hover {
@@ -87,11 +92,10 @@ body {
   width: 500px;
 }
 
-@media (min-width: 600px) {
+
+@media(min-width: 600px) {
   .background {
     background-color: #d4f7d4;
     height: 500px;
   }
 }
-
-/*# sourceMappingURL=App.css.map */
