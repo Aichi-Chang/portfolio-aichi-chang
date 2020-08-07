@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 import spaceInvaders from '../assets/spaceInvaders.png'
 import aPlusL from '../assets/aPlusL.png'
@@ -7,7 +8,7 @@ import workbench from '../assets/workbench.png'
 import bookDoctor from '../assets/bookDoctor.png'
 
 
-export default function Projects() {
+export default function Projects({ viewProjects }) {
 
 
   return (
@@ -56,6 +57,9 @@ export default function Projects() {
         <a className='button mr3' href='https://github.com/Aichi-Chang/SEI-Project-1'>Github</a>
       </div>
 
+      {!viewProjects && <div className='mt5 fixed right-2 left-2-ns bottom-2'>
+        <Link className='button' to='/'>Take me Back</Link>
+      </div>}
     </div>
 
 

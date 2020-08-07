@@ -85,7 +85,7 @@ export default function Home() {
       
 
         {!showLess && <div className='mt4' ref={projectRef}>
-          <Projects />
+          <Projects viewProjects={viewProjects} />
         </div>}
 
       {viewProjects && <button className='button' onClick={() => handleView()}>Show Less</button>}
