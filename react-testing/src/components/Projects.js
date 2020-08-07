@@ -39,7 +39,7 @@ export default function Projects({ viewProjects }) {
         <h3>The Vault</h3>
         <p>The vault is an online lifestyle magazine with four different themes: second-hand clothing swap, popular locations, hot topics, and editor-selected music album, films, and book recommendations. Users will be able to register to the site. On different pages, logged in users can leave or delete comments under the articles.</p>
         <a className='button mr3' target='_blank' href='https://project-3-2point0.herokuapp.com/'><p className='hover-black blue pa0 ma0'>View Site</p></a>
-        <a className='button mr3' target='_blank' href='https://github.com/Aichi-Chang/SEI-Project-3-v2'><p className='hover-black blue pa0 ma0'>Github</p></a>
+        <a className='button mr3' target='_blank' href='https://github.com/Aichi-Chang/SEI-Project-3'><p className='hover-black blue pa0 ma0'>Github</p></a>
       </div>
 
       <div className='project ma4 bg-light-gray pa4'>
