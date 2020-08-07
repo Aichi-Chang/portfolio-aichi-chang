@@ -1,9 +1,11 @@
 import React, { useState, useRef, useEffect, useContext } from 'react'
 import { Link } from 'react-router-dom'
+import P5Wrapper from 'react-p5-wrapper'
 
 import Facts from './Facts'
 import Navs from './Navs'
 import Projects from './Projects'
+import Sketch from './Sketch'
 
 
 
@@ -13,8 +15,27 @@ export default function Home() {
 
   let projectRef = useRef(null)
   let factRef = useRef(null)
+  
   const [viewProjects, setViewProjects] = useState(false)
   const [showLess, setShowLess] = useState(true)
+  
+  const [color, setColor] = useState({
+    color: [Math.random() * 255, Math.random() * 255, Math.random() * 255]
+  })
+  const [width, setWidth] = useState(window.innerWidth)
+  const [height, setHeight] = useState(window.innerHeight)
+
+
+  function randomColor() {
+    setColor({
+      color: [Math.random() * 255, Math.random() * 255, Math.random() * 255]
+    })
+  }
+
+  function setWAndH() {
+    setWidth(window.innerWidth)
+    setHeight(window.innerHeight)
+  }
 
   function handleView() {
       setViewProjects(!viewProjects)
@@ -36,6 +57,7 @@ export default function Home() {
   }
 
     useEffect(() => {
+
       if(viewProjects) {
         projectRef.current.scrollIntoView({
           behavior: 'smooth'
@@ -46,9 +68,11 @@ export default function Home() {
           block: 'start'
         })
       }
+
+      window.addEventListener("resize", setWAndH);
+        return () => window.removeEventListener("resize", setWAndH);
     })
   
-
 
   return (
     <div className='ma4'>
@@ -72,6 +96,8 @@ export default function Home() {
 
         <Navs />
       </div>
+
+      <P5Wrapper sketch={Sketch} color={color} width={width} height={height}></P5Wrapper>
       
       <UpdateExpandContext.Provider value={value}>
         <div className='mb4'>
