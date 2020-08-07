@@ -27,7 +27,7 @@ export default function Sketch(p) {
         circle.speedY *= -1
       }
       if(dis < 100) {
-        p.strokeWeight(0.5)
+        p.strokeWeight(1)
         p.stroke(circle.color)
         p.line(circle.x, circle.y, p.mouseX, p.mouseY)
       }
@@ -57,7 +57,7 @@ export default function Sketch(p) {
     p.push()
     for(let mainCircle of circles) {
       for (let otherCircle of circles) {
-        p.strokeWeight(0.5)
+        p.strokeWeight(1)
         p.stroke(otherCircle.color)
         let dis = p.dist(mainCircle.x, mainCircle.y, otherCircle.x, otherCircle.y)
         if (dis < 100 && dis > 10) {
@@ -71,7 +71,7 @@ export default function Sketch(p) {
 
 
   function randomColor() {
-    return p.color(p.random(255), p.random(255), p.random(255), 30)
+    return p.color(p.random(255), p.random(255), p.random(255), 20)
   }
 
   p.myCustomRedrawAccordingToNewPropsHandler = (props) => {
