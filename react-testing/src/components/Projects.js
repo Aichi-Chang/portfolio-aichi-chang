@@ -30,24 +30,24 @@ export default function Projects({ viewProjects }) {
         <img src={workbench} alt='workbench' />
         <h3>Space Invaders</h3>
         <p>Space Invaders is my first solo project, built with vanilla JavasCript. This is a classic arcade game from the 80s. The player aims to shoot an invading alien armada, before it reaches the planet's surface using a mounted gun turret.</p>
-        <a className='button mr3' href='https://aichi-chang.github.io/SEI-Project-1/'><p className='hover-black blue pa0 ma0'>View Site</p></a>
-        <a className='button mr3' href='https://github.com/Aichi-Chang/SEI-Project-1'><p className='hover-black blue pa0 ma0'>Github</p></a>
+        <a className='button mr3' href='https://github.com/Aichi-Chang/SEI-Project-4'><p className='hover-black blue pa0 ma0'>View Site</p></a>
+        <a className='button mr3' href='https://project-4-workbench.herokuapp.com/'><p className='hover-black blue pa0 ma0'>Github</p></a>
       </div>
 
       <div className='project ma4 bg-light-gray pa4'>
         <img src={theVault} alt='the vault' />
         <h3>Space Invaders</h3>
         <p>Space Invaders is my first solo project, built with vanilla JavasCript. This is a classic arcade game from the 80s. The player aims to shoot an invading alien armada, before it reaches the planet's surface using a mounted gun turret.</p>
-        <a className='button mr3' href='https://aichi-chang.github.io/SEI-Project-1/'><p className='hover-black blue pa0 ma0'>View Site</p></a>
-        <a className='button mr3' href='https://github.com/Aichi-Chang/SEI-Project-1'><p className='hover-black blue pa0 ma0'>Github</p></a>
+        <a className='button mr3' href='https://github.com/Aichi-Chang/SEI-Project-3-v2'><p className='hover-black blue pa0 ma0'>View Site</p></a>
+        <a className='button mr3' href='https://project-3-2point0.herokuapp.com/'><p className='hover-black blue pa0 ma0'>Github</p></a>
       </div>
 
       <div className='project ma4 bg-light-gray pa4'>
         <img src={aPlusL} alt='a plus l' />
         <h3>Space Invaders</h3>
         <p>Space Invaders is my first solo project, built with vanilla JavasCript. This is a classic arcade game from the 80s. The player aims to shoot an invading alien armada, before it reaches the planet's surface using a mounted gun turret.</p>
-        <a className='button mr3' href='https://aichi-chang.github.io/SEI-Project-1/'><p className='hover-black blue pa0 ma0'>View Site</p></a>
-        <a className='button mr3' href='https://github.com/Aichi-Chang/SEI-Project-1'><p className='hover-black blue pa0 ma0'>Github</p></a>
+        <a className='button mr3' href='https://github.com/Aichi-Chang/SEI-Project-2'><p className='hover-black blue pa0 ma0'>View Site</p></a>
+        <a className='button mr3' href='https://aichi-chang.github.io/SEI-Project-2/'><p className='hover-black blue pa0 ma0'>Github</p></a>
       </div>
 
       <div className='project ma4 bg-light-gray pa4'>
@@ -62,7 +62,7 @@ export default function Projects({ viewProjects }) {
         <img src={co2Calculator} alt='co2 calculator' />
         <h3>CO2 Calculator</h3>
         <p>A simple application for you to calculate the CO2 footprint that is generated from the route in the UK. It provides 3 different types of transport for you to choose and compare. The application has signup and login feature, you will be able to save routes to your personal dashboard.</p>
-        <a className='button mr3' href='https://co2-emission-calculate2.herokuapp.com/#/'><p className='hover-black blue pa0 ma0'>View Site</p></a>
+        <a className='button mr3' href='https://co2-emission-calculate2.herokuapp.com/'><p className='hover-black blue pa0 ma0'>View Site</p></a>
         <a className='button mr3' href='https://github.com/Aichi-Chang/co2-emission-calculator'><p className='hover-black blue pa0 ma0'>Github</p></a>
       </div>
 
