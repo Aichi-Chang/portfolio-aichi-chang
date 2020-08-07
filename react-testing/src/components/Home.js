@@ -15,12 +15,8 @@ export default function Home() {
 
   let projectRef = useRef(null)
   let factRef = useRef(null)
-  
   const [viewProjects, setViewProjects] = useState(false)
   const [showLess, setShowLess] = useState(true)
-  
-  const [mouseX, setMouseX] = useState()
-  const [mouseY, setMouseY] = useState()
 
 
   function handleView() {
@@ -79,7 +75,7 @@ export default function Home() {
         <Navs />
       </div>
 
-      <P5Wrapper sketch={Sketch} mouseX={mouseX} mouseY={mouseY}></P5Wrapper>
+      <P5Wrapper sketch={Sketch}></P5Wrapper>
       
       <UpdateExpandContext.Provider value={value}>
         <div className='mb4'>
