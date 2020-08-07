@@ -44,7 +44,7 @@ export default function Sketch(p) {
   function drawCircle(circle) {
     p.noStroke()
     p.fill(circle.color)
-    p.circle(circle.x - 10, circle.y, circle.size)
+    p.circle(circle.x, circle.y, circle.size)
   }
 
 
@@ -52,10 +52,10 @@ export default function Sketch(p) {
     p.push()
     for(let mainCircle of circles) {
       for (let otherCircle of circles) {
-        p.strokeWeight(5)
-        p.stroke(0)
-        let d = p.dist(mainCircle.x, mainCircle.y, otherCircle.X, otherCircle.y)
-        if (d < 60 && d > 5) {
+        p.strokeWeight(0.5)
+        p.stroke(mainCircle.color)
+        let dis = p.dist(mainCircle.x, mainCircle.y, otherCircle.x, otherCircle.y)
+        if (dis < 100 && dis > 10) {
           p.line(mainCircle.x, mainCircle.y, otherCircle.x, otherCircle.y)
         }
       }
