@@ -69,7 +69,7 @@ export default function Home() {
             <h1>Aichi Chang</h1>
           </div>
           
-          <p className='ma0'>Junior Software Engineer Based in London</p>
+          <p className='ma0'>Junior Software Developer Based in London</p>
         </div>
 
         <Navs />
