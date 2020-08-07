@@ -22,16 +22,16 @@ export default function Projects({ viewProjects }) {
         <h3>Book-Doctor</h3>
         <p>Book-doctor is an online GP appointment booking system. The idea is to help ease the phone line occupation and move the booking to an online app. This app has two way login, allows GP and their patients to use.</p>
         <p>Patients can easily view the avalible time of their GP and book an appointment. Once booked, they will receive an email confirmation from the app. After the appointment, GP will also be able to leave medical history as a note or prescibe medicine to their patients.</p>
-        <a className='button mr3' href='https://book-doctor.herokuapp.com/'><p className='hover-black blue pa0 ma0'>View Site</p></a>
-        <a className='button mr3' href='https://github.com/Aichi-Chang/bookdoctor'><p className='hover-black blue pa0 ma0'>Github</p></a>
+        <a className='button mr3' target='_blank' href='https://book-doctor.herokuapp.com/'><p className='hover-black blue pa0 ma0'>View Site</p></a>
+        <a className='button mr3' target='_blank' href='https://github.com/Aichi-Chang/bookdoctor'><p className='hover-black blue pa0 ma0'>Github</p></a>
       </div>
 
       <div className='project ma4 bg-light-gray pa4'>
         <img src={workbench} alt='workbench' />
         <h3>Workbench</h3>
         <p>Workbench is a schedule management app aimed at designers or students managing their on-going projects. Different users will have a clean board to themselves to start with and they will be able to add and update notes or to-do lists. The platform enables users to track their work flow online.</p>
-        <a className='button mr3' href='https://project-4-workbench.herokuapp.com/'><p className='hover-black blue pa0 ma0'>View Site</p></a>
-        <a className='button mr3' href='https://github.com/Aichi-Chang/SEI-Project-4'><p className='hover-black blue pa0 ma0'>Github</p></a>
+        <a className='button mr3' target='_blank' href='https://project-4-workbench.herokuapp.com/'><p className='hover-black blue pa0 ma0'>View Site</p></a>
+        <a className='button mr3' target='_blank' href='https://github.com/Aichi-Chang/SEI-Project-4'><p className='hover-black blue pa0 ma0'>Github</p></a>
       </div>
 
       <div className='project ma4 bg-light-gray pa4'>
