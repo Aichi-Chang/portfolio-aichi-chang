@@ -23,7 +23,7 @@ export default function Contact() {
           LinkedIn
         </label>
         <h3 id='contact-linkedin-url' className='avenir'>
-          <a className='link dark-blue grow' href='https://www.linkedin.com/in/aichi-chang/'>
+          <a className='link dark-blue grow' target='_blank' href='https://www.linkedin.com/in/aichi-chang/'>
             @aichi-chang (LinkedIn)
           </a>
         </h3>
@@ -34,7 +34,7 @@ export default function Contact() {
           Github
         </label>
         <h3 id='contact-github-url' className='avenir'>
-          <a className='link dark-blue grow' href='https://github.com/Aichi-Chang'>
+          <a className='link dark-blue grow' target='_blank' href='https://github.com/Aichi-Chang'>
             @aichi-chang (Github)
           </a>
         </h3>
@@ -45,7 +45,7 @@ export default function Contact() {
           Twitter
         </label>
         <h3 id='contact-twitter-url' className='avenir'>
-          <a className='link dark-blue grow' href='https://twitter.com/aichichang'>
+          <a className='link dark-blue grow' target='_blank' href='https://twitter.com/aichichang'>
             @aichichang (Twitter)
           </a>
         </h3>
@@ -56,7 +56,7 @@ export default function Contact() {
           Openprocessing
         </label>
         <h3 id='contact-openprocessing-url' className='avenir'>
-          <a className='link dark-blue grow' href='https://www.openprocessing.org/user/232063'>
+          <a className='link dark-blue grow' target='_blank' href='https://www.openprocessing.org/user/232063'>
             @aichi-chang (Openprocessing)
           </a>
         </h3>
