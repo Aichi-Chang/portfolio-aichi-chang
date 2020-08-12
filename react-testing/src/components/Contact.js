@@ -68,10 +68,8 @@ export default function Contact() {
      
       </div>
 
-  
+      <P5Wrapper sketch={Sketch}></P5Wrapper>
       
     </div>
   )
 }
-
-// <P5Wrapper sketch={Sketch}></P5Wrapper>

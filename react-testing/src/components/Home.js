@@ -77,8 +77,6 @@ export default function Home() {
       </div>
 
       <Icons />
-
-
       
       <UpdateExpandContext.Provider value={value}>
         <div className='mb4'>
@@ -92,6 +90,8 @@ export default function Home() {
         </div>}
 
       {viewProjects && <button className='button' onClick={() => handleView()}>Show Less</button>}
+
+      <P5Wrapper sketch={Sketch}></P5Wrapper>
       
     </div>
   )
