@@ -20,7 +20,7 @@ export default function Projects({ viewProjects }) {
       <div className='project ma4 bg-light-gray pa4'>
         <img src={bookDoctor} alt='book doctor' />
         <h3>Book-Doctor</h3>
-        <p>Book-doctor is an online GP appointment booking system. The idea is to help ease the phone line occupation and move the booking to an online app. This app has two way login, allows GP and their patients to use.</p>
+        <p>Book-doctor is an online GP appointment booking system. The idea is to help ease the phone line occupation and move the booking to an online app. This app has two-way login which allows both GPs and their patients to use.</p>
         <p>Patients can easily view the avalible time of their GP and book an appointment. Once booked, they will receive an email confirmation from the app. After the appointment, GP will also be able to leave medical history as a note or prescibe medicine to their patients.</p>
         <a className='button mr3' target='_blank' href='https://book-doctor.herokuapp.com/'><p className='hover-black blue pa0 ma0'>View Site</p></a>
         <a className='button mr3' target='_blank' href='https://github.com/Aichi-Chang/bookdoctor'><p className='hover-black blue pa0 ma0'>Github</p></a>
@@ -45,7 +45,7 @@ export default function Projects({ viewProjects }) {
       <div className='project ma4 bg-light-gray pa4'>
         <img src={aPlusL} alt='a plus l' />
         <h3>A Plus L</h3>
-        <p>A + L is the initial of the team members for this project. It also stands for art and life. This is a platform where users can search for all kinds of exhibitions or lifestyle event info. They will be able to check the event location or get redirected to the actual event page from the map. The external API used for this project is from The LIST.</p>
+        <p>A + L stands for Aichi & Lucy since we both worked on this project together. It also stands for art and life. This is a platform where users can search for all kinds of exhibitions or lifestyle events info. They will be able to check the event location or get redirected to the actual event page from the map. The external API used for this project is from The LIST.</p>
         <a className='button mr3' target='_blank' href='https://aichi-chang.github.io/SEI-Project-2/'><p className='hover-black blue pa0 ma0'>View Site</p></a>
         <a className='button mr3' target='_blank' href='https://github.com/Aichi-Chang/SEI-Project-2'><p className='hover-black blue pa0 ma0'>Github</p></a>
       </div>
@@ -53,7 +53,7 @@ export default function Projects({ viewProjects }) {
       <div className='project ma4 bg-light-gray pa4'>
         <img src={spaceInvaders} alt='space invader' />
         <h3>Space Invaders</h3>
-        <p>Space Invaders is my first solo project, built with vanilla JavasCript. This is a classic arcade game from the 80s. The player aims to shoot an invading alien armada, before it reaches the planet's surface using a mounted gun turret.</p>
+        <p>Space Invaders is my first solo project, built with vanilla JavaScript. This is a classic arcade game from the 80s. The player aims to shoot an invading alien armada, before it reaches the planet's surface using a mounted gun turret.</p>
         <a className='button mr3' target='_blank' href='https://aichi-chang.github.io/SEI-Project-1/'><p className='hover-black blue pa0 ma0'>View Site</p></a>
         <a className='button mr3' target='_blank' href='https://github.com/Aichi-Chang/SEI-Project-1'><p className='hover-black blue pa0 ma0'>Github</p></a>
       </div>
