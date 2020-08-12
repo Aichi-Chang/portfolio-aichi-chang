@@ -94,10 +94,46 @@ body {
   width: 500px;
 }
 
+.icons .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  color: #d4f7d4;
+  background-color: black;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: 20%;
+}
+
+.icons .tooltiptext::after {
+  content: " ";
+  position: absolute;
+  top: 100%; /* At the bottom of the tooltip */
+  left: 15%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+
+.icons:hover .tooltiptext {
+  visibility: visible;
+}
+
+
 
 @media(min-width: 600px) {
   .background {
     background-color: #d4f7d4;
     height: 500px;
   }
+
+  .icons {
+    max-width: 50px;
+  }
+
 }

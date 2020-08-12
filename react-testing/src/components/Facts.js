@@ -18,7 +18,7 @@ export default function Fact() {
     <div className='mt4 background'>
     <h3 className='underline'>About Me ლ(´ ∀ ` *)ლ</h3>
    <p className='avenir'>
-     Hello, I'm Aichi. Junior software developer - enjoy reading manga, french dessert, and indie films <span role='img' aria-label='sunglasses'>😎</span>
+     Hello, I'm Aichi. Junior software developer - enjoy reading manga, eating french dessert, and watching indie films <span role='img' aria-label='sunglasses'>😎</span>
    </p>
    {expand.one === true && <p id='1' className='avenir'>I have enrolled in the General Assembly Software Engineering Bootcamp. I used to be a fashion designer(with lots of creative ideas)</p>}
    {expand.two === true && <p id='2' className='avenir'>Being a software engineer has perfectly combined my creativity, problem-solving skills, and my knowledge in technology <span role='img' aria-label='star'>💫</span></p>}

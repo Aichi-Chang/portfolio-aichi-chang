@@ -6,6 +6,7 @@ import Facts from './Facts'
 import Navs from './Navs'
 import Projects from './Projects'
 import Sketch from './Sketch'
+import Icons from './Icons'
 
 
 
@@ -75,7 +76,9 @@ export default function Home() {
         <Navs />
       </div>
 
-      <P5Wrapper sketch={Sketch}></P5Wrapper>
+      <Icons />
+
+
       
       <UpdateExpandContext.Provider value={value}>
         <div className='mb4'>

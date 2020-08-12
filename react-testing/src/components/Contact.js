@@ -24,7 +24,7 @@ export default function Contact() {
         </label>
         <h3 id='contact-linkedin-url' className='avenir'>
           <a className='link dark-blue grow' target='_blank' href='https://www.linkedin.com/in/aichi-chang/'>
-            @aichi-chang (LinkedIn)
+            @aichi-chang
           </a>
         </h3>
       </div>
@@ -35,7 +35,7 @@ export default function Contact() {
         </label>
         <h3 id='contact-github-url' className='avenir'>
           <a className='link dark-blue grow' target='_blank' href='https://github.com/Aichi-Chang'>
-            @aichi-chang (Github)
+            @aichi-chang
           </a>
         </h3>
       </div>
@@ -46,7 +46,7 @@ export default function Contact() {
         </label>
         <h3 id='contact-twitter-url' className='avenir'>
           <a className='link dark-blue grow' target='_blank' href='https://twitter.com/aichichang'>
-            @aichichang (Twitter)
+            @aichichang
           </a>
         </h3>
       </div>
@@ -57,7 +57,7 @@ export default function Contact() {
         </label>
         <h3 id='contact-openprocessing-url' className='avenir'>
           <a className='link dark-blue grow' target='_blank' href='https://www.openprocessing.org/user/232063'>
-            @aichi-chang (Openprocessing)
+            @aichi-chang
           </a>
         </h3>
       </div>
@@ -68,8 +68,10 @@ export default function Contact() {
      
       </div>
 
-      <P5Wrapper sketch={Sketch}></P5Wrapper>
+  
       
     </div>
   )
 }
+
+// <P5Wrapper sketch={Sketch}></P5Wrapper>
