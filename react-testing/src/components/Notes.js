@@ -1,8 +1,17 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import { Link } from 'react-router-dom'
 
 
 export default function Notes() {
+
+  // const [data, setData] = useState()
+
+  // useEffect(() => {
+  //   fetch('https://cyf-glossary-backend.herokuapp.com/all-terms')
+  //     .then(res => res.json())
+  //     .then(res => setData(res))
+  // },[])
+
   return (
     <div className='mt6 flex items-center justify-center flex-column'>
       <div className='flex flex-column items-center mb3'>
