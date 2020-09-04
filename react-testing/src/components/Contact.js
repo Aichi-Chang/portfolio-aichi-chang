@@ -7,7 +7,11 @@ export default function Contact() {
   return (
     <div>
 
-      <div className='mt6 flex items-center justify-center flex-column'>
+      <div className='mt2 flex items-center justify-center flex-column'>
+      <div className='flex flex-column items-center mb5'>
+        <h1 className='avenir mb2'>Aichi Chang</h1>
+        <p className='ml2-l ma0 avenir'>Junior Software Developer based in London</p>
+      </div>
 
       <div className='flex flex-column items-center mb3'>
         <label htmlFor='contact-email-address' className='avenir'>
@@ -23,7 +27,7 @@ export default function Contact() {
           LinkedIn
         </label>
         <h3 id='contact-linkedin-url' className='avenir'>
-          <a className='link dark-blue grow' target='_blank' href='https://www.linkedin.com/in/aichi-chang/'>
+          <a className='link dark-blue grow' target='_blank' rel="noopener noreferrer" href='https://www.linkedin.com/in/aichi-chang/'>
             @aichi-chang
           </a>
         </h3>
@@ -34,7 +38,7 @@ export default function Contact() {
           Github
         </label>
         <h3 id='contact-github-url' className='avenir'>
-          <a className='link dark-blue grow' target='_blank' href='https://github.com/Aichi-Chang'>
+          <a className='link dark-blue grow' target='_blank' rel="noopener noreferrer" href='https://github.com/Aichi-Chang'>
             @aichi-chang
           </a>
         </h3>
@@ -45,7 +49,7 @@ export default function Contact() {
           Twitter
         </label>
         <h3 id='contact-twitter-url' className='avenir'>
-          <a className='link dark-blue grow' target='_blank' href='https://twitter.com/aichichang'>
+          <a className='link dark-blue grow' target='_blank' rel="noopener noreferrer" href='https://twitter.com/aichichang'>
             @aichichang
           </a>
         </h3>
@@ -56,13 +60,13 @@ export default function Contact() {
           Openprocessing
         </label>
         <h3 id='contact-openprocessing-url' className='avenir'>
-          <a className='link dark-blue grow' target='_blank' href='https://www.openprocessing.org/user/232063'>
+          <a className='link dark-blue grow' target='_blank' rel="noopener noreferrer" href='https://www.openprocessing.org/user/232063'>
             @aichi-chang
           </a>
         </h3>
       </div>
-        
-      <div className='mt5'>
+
+      <div className='mt4 mb5'>
         <Link className='button' to='/'>Take me Back</Link>
       </div>
      

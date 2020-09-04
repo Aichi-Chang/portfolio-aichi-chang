@@ -57,7 +57,7 @@ export default function Home() {
     <div className='ma4'>
     <div ref={factRef}></div>
       <div className='flex-l justify-between-l'>
-        <div>
+        <div className='flex-l flex-row-l items-center-l'>
           <div className='flex flex-row items-center'>
             <div className='flex items-center justify-center mr2 relative'>
               <div className='absolute flex items-center justify-center'>
@@ -69,8 +69,8 @@ export default function Home() {
             
             <h1>Aichi Chang</h1>
           </div>
-          
-          <p className='ma0'>Junior Software Developer based in London</p>
+
+          <p className='ml2-l ma0'>Junior Software Developer based in London</p>
         </div>
 
         <Navs />
